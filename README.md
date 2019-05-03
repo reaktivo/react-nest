@@ -6,7 +6,7 @@ Tired of nesting your context providers, try `react-nest`!
 [![npm version](https://img.shields.io/npm/v/react-nest.svg?style=flat)](https://www.npmjs.com/package/react-nest)
 [![CircleCI Status](https://circleci.com/gh/reaktivo/react-nest.svg?style=shield)](https://circleci.com/gh/reaktivo/react-nest)
 [![Coverage](https://img.shields.io/codecov/c/github/reaktivo/react-nest.svg)](https://codecov.io/gh/reaktivo/react-nest)
-![gzip size](http://img.badgesize.io/https://unpkg.com/react-nest/dist/react-nest.es.production.js?compression=gzip)
+[![gzip size](https://img.badgesize.io/https://unpkg.com/react-nest/dist/react-nest.es.production.js?compression=gzip)](https://unpkg.com/react-nest/dist/react-nest.es.production.js)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/reaktivo/react-nest/compare)
 
 ## Installation
