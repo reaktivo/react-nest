@@ -5,6 +5,13 @@
   "umd:main": "dist/react-nest.umd.production.js",
   "module": "dist/react-nest.es.production.js",
   "typings": "dist/index.d.ts",
+  "homepage": "https://www.github.com/reaktivo/react-nest",
+  "repository": "github:reaktivo/react-nest",
+  "author": {
+    "name": "Marcel Miranda",
+    "email": "m@reaktivo.com",
+    "url": "https://reaktivo.com"
+  },
   "files": [
     "dist"
   ],
