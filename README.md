@@ -16,7 +16,7 @@ To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com)
     $ npm install react-nest
     $ yarn add react-nest
 
-## The problem
+## 😤 The problem
 
 At one point in a complex application your root component might look like the following:
 
@@ -38,7 +38,7 @@ function App() {
 }
 ```
 
-## The solution
+## 💡The solution
 
 `react-nest` helps you make your nested providers and consumers more readable and succinct by allowing you do the following:
 
