@@ -73,7 +73,7 @@ function Nest(props) {
           React.isValidElement(parent)
             ? React.cloneElement(parent, parent.props, child)
             : child,
-        []
+        null
       )}
       }
     </React.Fragment>
