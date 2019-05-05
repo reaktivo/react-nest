@@ -1,6 +1,6 @@
 {
   "name": "react-nest",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "umd:main": "dist/react-nest.umd.production.js",
   "module": "dist/react-nest.es.production.js",
