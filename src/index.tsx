@@ -20,7 +20,7 @@ export default function Nest(props: Props) {
             isValidElement(parent)
               ? cloneElement(parent, parent.props, child)
               : child,
-          []
+          null
         )}
     </Fragment>
   );
