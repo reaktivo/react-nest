@@ -38,7 +38,7 @@ function App() {
 }
 ```
 
-## 💡The solution
+## 💡 The solution
 
 `react-nest` helps you make your nested providers and consumers more readable and succinct by allowing you do the following:
 
@@ -55,6 +55,28 @@ function App() {
       <IntlProvider />
       <App />
     </Nest>
+  );
+}
+```
+
+## 📋 Copy/paste
+
+react-nest, a library so small you might as well copy-and-paste it into your app:
+
+```jsx
+function Nest(props) {
+  const children = React.Children.toArray(props.children).reverse();
+  return (
+    <React.Fragment>
+      {children.reduce(
+        (child, parent) =>
+          React.isValidElement(parent)
+            ? React.cloneElement(parent, parent.props, child)
+            : child,
+        []
+      )}
+      }
+    </React.Fragment>
   );
 }
 ```
