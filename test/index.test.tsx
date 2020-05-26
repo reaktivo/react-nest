@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import Nest from '../src';
 
 describe('Nest', () => {
