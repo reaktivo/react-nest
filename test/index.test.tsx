@@ -53,7 +53,16 @@ describe('Nest', () => {
     expect(first.contains(second)).toBeTruthy();
     expect(second.contains(third)).toBeTruthy();
     expect(third.childNodes).toHaveLength(0);
+  });
 
-    console.log($.debug());
+  it('should ignore non react element children', () => {
+    const $ = render(
+      <Nest>
+        first
+        <div title="second" />
+      </Nest>
+    );
+
+    expect($.container.innerHTML).not.toContain('first');
   });
 });
