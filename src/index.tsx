@@ -15,13 +15,11 @@ export default function Nest(props: Props) {
     <Fragment>
       {Children.toArray(props.children)
         .reverse()
-        .reduce(
-          (child, parent) =>
-            isValidElement(parent)
-              ? cloneElement(parent, parent.props, child)
-              : child,
-          null
-        )}
+        .reduce((child, parent) => {
+          return isValidElement(parent)
+            ? cloneElement(parent, parent.props, child)
+            : child;
+        }, <Fragment />)}
     </Fragment>
   );
 }
