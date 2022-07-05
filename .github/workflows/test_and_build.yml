@@ -1,10 +1,9 @@
-name: Node.js CI
+name: Test and Build
 
 on: push
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,8 +16,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run coverage
-    - name: Code coverage
-      uses: codecov/codecov-action@v1
+    - run: npm install-ci-test
+    - run: npm run build

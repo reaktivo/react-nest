@@ -1,0 +1,23 @@
+name: Main update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 18.x
+    - run: npm ci
+    - run: npm run coverage
+    - name: Code coverage
+      uses: codecov/codecov-action@v3
+      with:
+        fail_ci_if_error: true
