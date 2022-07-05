@@ -1,14 +1,14 @@
-import React, {
+import {
   Children,
   cloneElement,
   Fragment,
   isValidElement,
   ReactNode,
-} from 'react';
+} from 'react'
 
 type Props = {
   children?: ReactNode;
-};
+}
 
 export default function Nest(props: Props) {
   return (
@@ -21,5 +21,5 @@ export default function Nest(props: Props) {
             : child;
         }, <Fragment />)}
     </Fragment>
-  );
+  )
 }
