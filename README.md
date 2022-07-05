@@ -4,8 +4,8 @@ Tired of nesting your context providers, try `react-nest`!
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/reaktivo/react-nest/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/react-nest.svg?style=flat)](https://www.npmjs.com/package/react-nest)
-[![Build Status](https://github.com/reaktivo/react-nest/actions/workflows/main.yml/badge.svg)](https://github.com/reaktivo/react-nest/actions/workflows/main.yml)
-[![Coverage](https://img.shields.io/codecov/c/github/reaktivo/react-nest.svg)](https://codecov.io/gh/reaktivo/react-nest)
+[![Build Status](https://github.com/reaktivo/react-nest/actions/workflows/test_and_build.yml/badge.svg)](https://github.com/reaktivo/react-nest/actions/workflows/test_and_build.yml)
+[![Coverage](https://codecov.io/gh/reaktivo/react-nest/branch/main/graph/badge.svg?token=RdCNaw7RkF)](https://codecov.io/gh/reaktivo/react-nest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/reaktivo/react-nest/compare)
 
 ## Installation
@@ -82,4 +82,4 @@ function Nest(props) {
 
 ## License
 
-react-nest is open source software [licensed as MIT](https://github.com/reaktivo/react-nest/blob/master/LICENSE).
+react-nest is open source software [licensed as MIT](https://github.com/reaktivo/react-nest/blob/main/LICENSE).
