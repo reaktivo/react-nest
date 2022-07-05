@@ -1,8 +1,8 @@
 import React, { Consumer, createContext, useContext } from 'react'
 import Nest from '..'
 
-const Context1 = createContext('');
-const Context2 = createContext('');
+const Context1 = createContext('')
+const Context2 = createContext('')
 
 type ConsumerProps = {children?: React.ReactNode, text?: string}
 
