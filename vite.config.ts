@@ -1,6 +1,6 @@
 import * as path from 'path'
 import { defineConfig } from 'vitest/config'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import typescript from '@rollup/plugin-typescript'
 
 export default defineConfig({
