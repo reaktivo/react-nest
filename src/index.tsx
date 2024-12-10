@@ -3,7 +3,7 @@ import {
   cloneElement,
   Fragment,
   isValidElement,
-  ReactNode,
+  type ReactNode,
 } from 'react'
 
 type Props = {
@@ -17,7 +17,7 @@ export default function Nest(props: Props) {
         .reverse()
         .reduce((child, parent) => {
           return isValidElement(parent)
-            ? cloneElement(parent, parent.props, child)
+            ? cloneElement(parent, parent.props as Partial<unknown>, child)
             : child;
         }, <Fragment />)}
     </Fragment>

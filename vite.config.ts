@@ -1,5 +1,5 @@
 import * as path from 'path'
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import typescript from '@rollup/plugin-typescript'
 
@@ -9,13 +9,14 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.tsx'),
       name: 'ReactNest',
-      fileName: (format) => `react-nest.${format}.js`
+      fileName: `react-nest`
     },
     rollupOptions: {
-      external: ['react'],
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'react-dom/client'],
       output: {
         globals: {
-          react: 'React'
+          react: 'React',
+          'react-dom': 'ReactDOM'
         }
       },
       plugins: [
@@ -32,10 +33,5 @@ export default defineConfig({
         })
       ]
     }
-  },
-  test: {
-    coverage: {
-      reporter: ['text', 'json', 'html'],
-    },
   }
 })
